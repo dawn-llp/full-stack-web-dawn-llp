@@ -16,30 +16,30 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 //@EnableWebMvc
 public class MvcConfig extends WebMvcConfigurerAdapter {
 
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
+@Override
+public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/home").setViewName("home");
         registry.addViewController("/").setViewName("home");
-       // registry.addViewController("/dvds").setViewName("dvds");
+        // registry.addViewController("/dvds").setViewName("dvds");
         registry.addViewController("/login").setViewName("login");
-        registry.addViewController("/pictures").setViewName("pictures");
-     //   registry.addViewController("/actions").setViewName("actions");
+        //  registry.addViewController("/pictures").setViewName("pictures");
+        //   registry.addViewController("/actions").setViewName("actions");
         registry.addViewController("/history").setViewName("history");
         registry.addViewController("/users").setViewName("users");
-    }
-    
+}
+
 //    @Bean
 //   @Override
 //    public ViewResolver viewResolver() {
 //        ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
 //        templateResolver.setTemplateMode("HTML5");
- //       templateResolver.setPrefix("/templates/");
+//       templateResolver.setPrefix("/templates/");
 //        templateResolver.setSuffix(".html");
- //       SpringTemplateEngine engine = new SpringTemplateEngine();
+//       SpringTemplateEngine engine = new SpringTemplateEngine();
 //        engine.setTemplateResolver(templateResolver);
 //
 //        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
 //        return viewResolver;
- //   }
+//   }
 
 }
